@@ -10,7 +10,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(session({ secret: 'your_secret_key', resave: false, saveUninitialized: true }));
 
 
-app.use(express.static('public'));
+app.use(express.static('docs'));
 
 const connection = mysql.createConnection({
     host: 'localhost',
